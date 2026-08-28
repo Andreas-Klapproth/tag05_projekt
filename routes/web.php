@@ -24,11 +24,11 @@ Route::get('/courses/{course}/created', [CourseController::class, 'created'])->n
 
 // --- KURS ANZEIGEN ---
 Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
-Route::get('/courses/{course}', [CourseController::class, 'show'])->name('courses.show');
 
 // --- KURS BEITRETEN (JOIN FLOW) ---
 // 1. Formular / Code-Eingabe zum Beitreten anzeigen
 Route::get('/courses/join', [CourseController::class, 'join'])->name('courses.join');
+Route::get('/courses/{course}', [CourseController::class, 'show'])->name('courses.show');
 // 2. Vorschau / Bestätigung VOR dem Beitreten (optional, z. B. "Kurs gefunden: Laravel 101. Beitreten?")
 Route::get('/courses/{course}/confirm-join', [CourseController::class, 'confirmJoin'])->name('courses.confirm-join');
 // 3. Beitritt verarbeiten / Speichern

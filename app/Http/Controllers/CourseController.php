@@ -26,10 +26,6 @@ class CourseController extends Controller
         return view('course.join');
     }
 
-    public function confirm(Course $course)
-    {
-        return view('course.confirm', compact('course')); // kurzschreibweise für  ['course' => $course]
-    }
 
     public function store(Request $request)
     {
@@ -44,7 +40,7 @@ class CourseController extends Controller
 
         $course = Course::create($validated);
 
-        return redirect()->route('courses.confirm', $course);
+        return redirect()->route('courses.created', $course);
     }
 
     public function show(Course $course)
@@ -54,7 +50,7 @@ class CourseController extends Controller
 
     public function created(Course $course)
     {
-        dd($course);
+        return view('course.confirm', compact('course')); // kurzschreibweise für  ['course' => $course]
     }
 
     public function confirmJoin(Course $course)
