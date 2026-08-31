@@ -50,7 +50,7 @@ class CourseController extends Controller
 
     public function created(Course $course)
     {
-        return view('course.confirm', compact('course')); // kurzschreibweise für  ['course' => $course]
+        return view('course.confirm', compact('course')); // kurzschreibweise für  ['courses' => $courses]
     }
 
     public function confirmJoin(Course $course)

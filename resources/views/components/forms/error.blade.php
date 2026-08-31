@@ -1,5 +1,5 @@
 @props(['for' => '__REQUIRED__'])
 
-@error($for)
+@error($name)
     <p class="error"> {{ $message }}</p>
 @enderror
