@@ -13,17 +13,17 @@ class CourseController extends Controller
             ->orWhere('id', 1)
             ->get();
 
-        return view('course.index', compact('courses')); // kurzschreibweise für ['courses' => $courses]
+        return view('courses.index', compact('courses')); // kurzschreibweise für ['courses' => $courses]
     }
 
     public function create()
     {
-        return view('course.create');
+        return view('courses.create');
     }
 
     public function join()
     {
-        return view('course.join');
+        return view('courses.join');
     }
 
 
@@ -45,12 +45,12 @@ class CourseController extends Controller
 
     public function show(Course $course)
     {
-        return view('course.show', compact('course'));
+        return view('courses.show', compact('course'));
     }
 
     public function created(Course $course)
     {
-        return view('course.confirm', compact('course')); // kurzschreibweise für  ['courses' => $courses]
+        return view('courses.confirm', compact('course')); // kurzschreibweise für  ['courses' => $courses]
     }
 
     public function confirmJoin(Course $course)

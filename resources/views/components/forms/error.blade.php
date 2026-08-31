@@ -1,4 +1,4 @@
-@props(['for' => '__REQUIRED__'])
+@props(['name' => '__REQUIRED__'])
 
 @error($name)
     <p class="error"> {{ $message }}</p>

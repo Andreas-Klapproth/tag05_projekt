@@ -1,4 +1,4 @@
-<x-app title="Kurse">
+<x-layouts.app title="Kurse">
     <h1>Übersicht aller Kurse</h1>
 
     <table>
@@ -18,4 +18,4 @@
             Aktuell keine Kurse vorhanden!
         @endforelse
     </table>
-</x-app>
+</x-layouts.app>

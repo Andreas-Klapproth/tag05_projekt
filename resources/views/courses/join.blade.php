@@ -1,4 +1,4 @@
-<x-app title="Am Kurs teilnehmen">
+<x-layouts.app title="Am Kurs teilnehmen">
     <h1>Teilnehmen</h1>
 
-</x-app>
+</x-layouts.app>

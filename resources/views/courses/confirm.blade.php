@@ -1,4 +1,4 @@
-<x-app title="Kurs erstellt">
+<x-layouts.app title="Kurs erstellt">
 
     <h1>Kurs erstellt</h1>
     <p>Name: {{ $course->name }}</p>
@@ -6,4 +6,4 @@
     <p>Max. Teilnehmer: {{ $course->max_participants }}</p>
     <p>Erstellt am: {{ $course->created_at }}</p>
 
-</x-app>
+</x-layouts.app>

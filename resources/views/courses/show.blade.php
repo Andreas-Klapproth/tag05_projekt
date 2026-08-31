@@ -1,4 +1,4 @@
-<x-app title="Kursdetails">
+<x-layouts.app title="Kursdetails">
 
     <h1>Kursdetails</h1>
     <p>Id: {{ $course->id }}</p>
@@ -7,4 +7,4 @@
     <p>Max. Teilnehmer: {{ $course->max_participants }}</p>
     <p>Erstellt am: {{ $course->created_at }}</p>
 
-</x-app>
+</x-layouts.app>
