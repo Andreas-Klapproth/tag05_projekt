@@ -14,7 +14,7 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
 /*
 |--------------------------------------------------------------------------
-| Kurs-Routen (Courses)
+| FEATURE Kurs-Routen (Courses)
 |--------------------------------------------------------------------------
 | HINWEIS ZUR REIHENFOLGE:
 | 1. Feste URLs (z.B. /courses, /courses/create, /courses/join) MÜSSEN ZUERST stehen.
